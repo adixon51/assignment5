@@ -22,15 +22,19 @@ img {
 }
 
 .homepagepic {
-    height: 250px; 
+    height: 250px;
+    display: flex;
+    align-content: center;
 }
 
 .historypagepic {
     height: 400px;
+    align-content: center;
 }
 
 .abilitiespagepic {
     height: 300px;
+    align-content: center;
 }
 
 body {
@@ -100,15 +104,17 @@ footer nav ul {
 }
 
 p {
-    text-align: left;
+    text-align: center;
 }
 
-@media screen and (max-width: 30rem) {
+@media screen and (max-width: 40rem) {
     header,
     main,
     footer,
     form p {
         flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
     }
 }
     }
